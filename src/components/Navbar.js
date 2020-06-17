@@ -1,11 +1,18 @@
 import React from 'react';
 
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import Omega from './images/Omega.svg';
 
 function Navbars() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="#home"><img
+        src={Omega}
+        width="90"
+        height="90"
+        className="d-inline-block align-top"
+        alt="React Bootstrap logo"
+      /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
